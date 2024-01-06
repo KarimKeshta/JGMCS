@@ -1,0 +1,36 @@
+main: de.karimkeshta.minecraft.jgmcs.JGMCS
+name: JGMCS
+
+version: 0.1
+
+description:  'A general minecraft plugin, for the server of the jugglegaming community.'
+api-version: '1.20'
+
+author: Karim Keshta
+website: 'https://minecraft.karimkeshta.de'
+
+
+commands:
+    jgmcs:
+        description: The main command of this plugin
+        aliases: [jg]
+        permission: jgmcs.command.use
+        permission-message: This command is only available to authorized members of the administration.
+        
+
+permissions:
+    jgmcs.command.use:
+        description: Required to use commands of this plugin.
+        default: op
+    jgmcs.command.vanish:
+        description: Required to use the vanish command.
+        default: not op
+    jgmcs.vanish.use:
+        description: Required to use the vanish command.
+        default: not op
+    jgmcs.vanish.silent:
+        description: Required to disabled join and leave messages.
+        default: not op
+    jgmcs.vanish.keep:
+        description: Required to keep vanish after disconnect or server restart.
+        default: not op
